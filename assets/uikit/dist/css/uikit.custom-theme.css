@@ -2365,6 +2365,34 @@ select.uk-form-width-xsmall {
 .hello-text > ul > li {
   padding-top: 10px !important;
 }
+.warning-button {
+  background-color: #fdb44b !important;
+}
+.transparent-button {
+  background-color: transparent !important;
+  border: 1px solid red;
+}
+.about-me-section {
+  background-color: #05595B !important;
+}
+.about-me {
+  margin-left: 100px !important;
+}
+.about-me > .tag {
+  color: gray !important;
+}
+.green-hr-about-me {
+  display: inline-block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid #00C897;
+  border-style: inset;
+  border-width: 1px ;
+  width: 5% !important;
+  text-align: left !important;
+}
 /* ========================================================================
    Component: Container
  ========================================================================== */
