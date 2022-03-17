@@ -2426,7 +2426,7 @@ select.uk-form-width-xsmall {
   border-radius: 100%;
   position: absolute;
 }
-.card-parent {
+.card-skill-parent {
   margin-top: 0px !important;
 }
 .card-skill {
@@ -2436,6 +2436,18 @@ select.uk-form-width-xsmall {
   background-color: #001F3D !important;
 }
 .card-skill:hover {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.card-services-parent {
+  margin-top: 0px !important;
+}
+.card-services {
+  width: 270px;
+  height: 250px;
+  border-radius: 10px;
+  background-color: #001F3D !important;
+}
+.card-services:hover {
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 .mr0 {
