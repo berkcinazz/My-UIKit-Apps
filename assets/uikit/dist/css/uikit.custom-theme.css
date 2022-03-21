@@ -2465,6 +2465,12 @@ select.uk-form-width-xsmall {
 .mr0 {
   margin-right: 0px !important;
 }
+.contact-form textarea,
+.contact-form input {
+  background-color: #041C32 !important;
+  color: #fff;
+  border: 0px;
+}
 /* ========================================================================
    Component: Container
  ========================================================================== */
