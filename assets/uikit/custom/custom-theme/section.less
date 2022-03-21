@@ -183,7 +183,15 @@
            color:#fff;
            border: 0px;
        }
-   }
+       input[type=number]::-webkit-inner-spin-button, 
+       input[type=number]::-webkit-outer-spin-button { 
+        -webkit-appearance: none; 
+      }
+
+      input[type=number] {
+        -moz-appearance: textfield;
+      }
+   }  
    
 .center {
     display: table;
@@ -207,14 +215,14 @@
     margin-left: 30px;
   }
   
-  /** Facebook **/
+  /** Google **/
   
-  .facebook {
+  .google {
     width: 50px;
     height: 50px;
   }
   
-  .facebook .border {
+  .google .border {
     background: transparent;
     outline: none;
     color:rgba(255,255,255, 0.3);
@@ -227,14 +235,14 @@
     transition: all .2s ease-in-out;
   }
   
-  .facebook .border:hover {
+  .google .border:hover {
     background: #3b5998;
     border-color: #436aaf;
     color: rgba(255,255,255, 0.9);
     transform: scale(1.2);
   }
   
-  .fa.fa-facebook {
+  .fa.fa-google {
     font-size: 25px;
   }
   
@@ -321,8 +329,8 @@
   }
   
   .linkedin .border:hover {
-    background: #ea4c89;
-    border-color: #ff78ac;
+    background: #0e76a8;
+    border-color: #0c85bd;
     color: rgba(255,255,255, 0.9);
     transform: scale(1.2);
   }

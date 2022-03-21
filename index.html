@@ -386,21 +386,21 @@
                         <form class="contact-form">
                             <div class="uk-grid-small uk-child-width-1-2 uk-text-center" uk-grid>
                                 <div class="uk-form-controls">
-                                    <input class="uk-input uk-border-rounded uk-placeholder" type="text" placeholder="First Name">
+                                    <input class="uk-input uk-border-rounded uk-placeholder" type="text" placeholder="First Name" required>
                                 </div>
                                 <div class="uk-form-controls">
-                                    <input class="uk-input uk-border-rounded uk-placeholder" type="text" placeholder="Last Name">
+                                    <input class="uk-input uk-border-rounded uk-placeholder" type="text" placeholder="Last Name" required>
                                 </div>
                             </div>
                             <div class="uk-grid-small uk-child-width-1-1 uk-text-center" uk-grid>
                                 <div class="uk-form-controls">
-                                    <input class="uk-input uk-border-rounded uk-placeholder" type="text" placeholder="Email">
+                                    <input class="uk-input uk-border-rounded uk-placeholder" type="email" placeholder="Email" required>
                                 </div>
                                 <div class="uk-form-controls">
-                                    <input class="uk-input uk-border-rounded uk-placeholder" type="text" placeholder="Phone">
+                                    <input class="uk-input uk-border-rounded uk-placeholder" id="phone" name="phone" type="text">
                                 </div>
                                 <div class="uk-form-controls">
-                                    <textarea class="uk-textarea uk-border-rounded uk-placeholder" id="message" name="message" rows="3" placeholder="Message"></textarea>
+                                    <textarea class="uk-textarea uk-border-rounded uk-placeholder" type="text" rows="4" placeholder="Message" required></textarea>
                                 </div>
                                 <div class="uk-form-controls uk-margin-medium-top">
                                     <button class="uk-button warning-button uk-width-1-3 uk-border-rounded uk-margin-small-bottom">Submit</button>
@@ -417,34 +417,47 @@
         <div class="uk-section uk-section-small">
             <div class="uk-grid-medium uk-child-width-1-2" uk-grid>
                 <div class="uk-text-center">
-                <span>2022 - </span>
+                <span class="uk-text-large">© 2022 Designed by <a class="uk-link-text text-yellow" target="_blank" href="https://www.instagram.com/berkcinaz/">Berk Cinaz</a></span>
                 </div>
                 <div class="center">
                     <div id="social">
                         <ul>
-                            <li class="facebook">
-                            <button class="border"><i class="fa fa-facebook"></i></button>
+                            <li class="google">
+                                <a href="mailto:berk.cinaz@gmail.com"><button class="border"><i class="fa fa-google"></i></button></a>
                             </li>
                             <li class="twitter">
-                                <button class="border"><i class="fa fa-twitter"></i></button>
+                                <a target="_blank" href="https://twitter.com/berkcinaz1"><button class="border"><i class="fa fa-twitter"></i></button></a>
                             </li>
                             <li class="instagram">
-                                <button class="border"><i class="fa fa-instagram"></i></button>
+                                <a target="_blank" href="https://www.instagram.com/berkcinaz/"><button class="border"><i class="fa fa-instagram"></i></button></a>
                             </li>
                             <li class="linkedin">
-                                <button class="border"><i class="fa fa-linkedin"></i></button>
+                                <a target="_blank" href="https://www.linkedin.com/in/berk-cinaz-3b60291bb/"><button class="border"><i class="fa fa-linkedin"></i></button></a>
                             </li>
                         </ul>
                     </div>
                 </div>
             </div>
-            
         </div>
     </footer>
-
-
-    <script src="https://kit.fontawesome.com/ede3a46200.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js" integrity="sha512-pHVGpX7F/27yZ0ISY+VVjyULApbDlD0/X0rgGbTqCE7WFW5MezNTWG/dnhtbBuICzsd0WQPgpE4REBLv+UqChw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://kit.fontawesome.com/ede3a46200.js" crossorigin="anonymous"></script>
 <script src="./assets/uikit/dist/js/uikit.min.js"></script>
 <script src="./assets/uikit/dist/js/uikit-icons.min.js"></script>
+
+<script>
+$("#phone").attr("placeholder", "+(00) 000-000-00-00");
+let options =  {
+    onKeyPress: function(phone, e, field, options) {
+        let masks = ['+(00) 000-000-00-00', '+(00) 000-000-00-00'];
+        let mask = (phone.length>14) ? masks[1] : masks[0];
+        $('#phone').mask(mask, options);
+    }
+};
+
+$('#phone').mask('+(00) 000-000-00-00', options);
+ </script>
+ 
 </body>
 </html>
