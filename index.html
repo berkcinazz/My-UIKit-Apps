@@ -35,7 +35,7 @@
     <main>
         <section class="uk-section uk-section-large">
         </section>
-        <section class="uk-section">
+        <section class="uk-section ">
             <div class="uk-container">
                 <div class="uk-grid-medium uk-child-width-1-1@m" uk-grid>
                     <div>
@@ -381,10 +381,42 @@
                     <div class="uk-width-1-1@m text-gray uk-margin-remove">
                         <span>Please fill in the form below to get started.</span>
                     </div>
+                    <div class="uk-width-2-3 uk-align-center">
+                        <form class="contact-form">
+                            <div class="uk-grid-small uk-child-width-1-2 uk-text-center" uk-grid>
+                                <div class="uk-form-controls">
+                                    <input class="uk-input uk-border-rounded uk-placeholder" type="text" placeholder="First Name">
+                                </div>
+                                <div class="uk-form-controls">
+                                    <input class="uk-input uk-border-rounded uk-placeholder" type="text" placeholder="Last Name">
+                                </div>
+                            </div>
+                            <div class="uk-grid-small uk-child-width-1-1 uk-text-center" uk-grid>
+                                <div class="uk-form-controls">
+                                    <input class="uk-input uk-border-rounded uk-placeholder" type="text" placeholder="Email">
+                                </div>
+                                <div class="uk-form-controls">
+                                    <input class="uk-input uk-border-rounded uk-placeholder" type="text" placeholder="Phone">
+                                </div>
+                                <div class="uk-form-controls">
+                                    <textarea class="uk-textarea uk-border-rounded uk-placeholder" id="message" name="message" rows="3" placeholder="Message"></textarea>
+                                </div>
+                                <div class="uk-form-controls uk-margin-medium-top">
+                                    <button class="uk-button warning-button uk-width-1-3 uk-border-rounded uk-margin-small-bottom">Submit</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>                    
                 </div>
             </div>
         </section>
     </main>
+
+    <footer>
+        <div class="uk-section uk-section-small">
+            
+        </div>
+    </footer>
 
 <script src="./assets/uikit/dist/js/uikit.min.js"></script>
 <script src="./assets/uikit/dist/js/uikit-icons.min.js"></script>
