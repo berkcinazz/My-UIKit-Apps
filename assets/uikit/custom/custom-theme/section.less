@@ -53,11 +53,19 @@
 // ========================================================================
 
 .hook-section-misc() {
+  main{
+    background: url(/assets/images/bg.svg) no-repeat center center fixed;
+    background-size: cover;
+  }
   html{
     scroll-behavior: smooth;
   }
   span::selection,h6::selection,h3::selection,h4::selection,a::selection,p::selection{
     background-color: orangered !important;
+    color: #fff !important;
+  }
+
+  .icon-color {
     color: #fff !important;
   }
     .text-white{
@@ -162,8 +170,8 @@
     margin-top:0px !important;
 }
     .card-services{
-    width: 270px;
-    height: 250px;
+    width: 300px;
+    height: 325px;
     border-radius: 10px;
     background-color: #001F3D !important;
     }

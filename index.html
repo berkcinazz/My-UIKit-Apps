@@ -36,7 +36,7 @@
     <main>
         <section id="home" class="uk-section" uk-height-viewport>
             <div class="uk-padding-large uk-margin-xlarge-top uk-container">
-                <div class="uk-grid-medium uk-child-width-1-1@m" uk-grid>
+                <div class="uk-grid-medium uk-child-width-1-1@m uk-flex-center" uk-grid>
                     <div>
                         <div class="hello-text " uk-scrollspy="cls: uk-animation-slide-top; repeat: true">
                             <ul class="uk-list uk-text-center uk-link-reset">
@@ -47,7 +47,7 @@
                                     <span class="text-white"> I'm a </span><span class="text-yellow "> Full-Stack Web Developer </span>
                                 </li>
                                 <li>
-                                    <hr class="green-hr"/>
+                                    <hr class="green-hr" uk-scrollspy="cls: uk-animation-slide-top; repeat: true"/>
                                 </li>
                                 <li class="uk-margin-top">
                                     <span class="text-white">Looking for a Full Stack Web Developer? Whether for business or personel use. If you need a flexible and collaborative website. Let's talk about it! I can plan and prepare what you want to do!</span>
@@ -64,9 +64,9 @@
                 </div>
             </div>
         </section>
-        <section id="about" class="uk-section uk-section-large section-background" uk-height-viewport>
+        <section id="about" class="uk-section uk-section-large" uk-height-viewport>
             <div class="container">
-                <div class="uk-grid-medium" uk-grid uk-scrollspy="cls: uk-animation-slide-right; repeat: true">
+                <div class="uk-grid-medium uk-flex-center" uk-grid uk-scrollspy="cls: uk-animation-slide-right; repeat: true">
                     <div class="uk-width-2-3@m">
                         <ul class="uk-list uk-link-reset about-me">
                             <li class="large-text text-white">
@@ -78,7 +78,7 @@
                                 </span>
                             </li>
                             <li>
-                                <hr class="green-hr-about-me" />
+                                <hr class="green-hr-about-me" uk-scrollspy="cls: uk-animation-slide-top; repeat: true"/>
                             </li>
                         </ul>
                         <ul class="uk-list uk-link-reset uk-text-small about-me uk-margin-large">
@@ -147,7 +147,7 @@
                         <span class="tag">#Html5 #CSS3 .NET6 Javascript #UIKit</span>
                     </div>
                     <div class="uk-width-1-1@m uk-margin-remove">
-                        <hr class="green-hr" />
+                        <hr class="green-hr" uk-scrollspy="cls: uk-animation-slide-top; repeat: true" />
                     </div>
                     <div class="uk-width-1-1@m text-gray">
                         <span>Below are my professional skills that help me develop high-quality, attractive and responsive websites.</span>
@@ -155,15 +155,13 @@
                 </div>
                 <div class="uk-grid-small uk-width-1-1 uk-child-width-1-4 uk-margin-medium " uk-grid>
                     <div class="card-skill-parent">
-                        <div class="uk-card uk-card-secondary uk-card-body card-skill">
-                            <div class="uk-grid-small" uk-grid>
-                                <div class="uk-width-1-5">
-                                    <i class="fa-brands fa-html5 fa-2xl"></i>
-                                </div>
-                                <div class="uk-width-4-5">
-                                    <h3 class="uk-card-title">HTML5</h3>
-                                    <p class="uk-text-small">The markup language used to construct web pages, layout and presentation of World Wide Web content.</p>
-                                </div>
+                        <div class="uk-card uk-card-secondary card-skill">
+                            <div class="uk-card-title uk-flex uk-flex-middle uk-grid-small uk-padding-small uk-margin-remove">
+                                <img src="/assets/images/csharp.svg" class="icon-color" width="70px" alt="">
+                                <h3 class="uk-card-title uk-margin-remove">HTML5</h3>
+                            </div>
+                            <div class="uk-card-body uk-padding-remove-top">
+                                <p class="uk-text-small uk-margin-remove">The markup language used to construct web pages, layout and presentation of World Wide Web content.</p>
                             </div>
                         </div>
                     </div>
@@ -214,7 +212,7 @@
                         <div class="uk-card uk-card-secondary uk-card-body card-skill">
                             <div class="uk-grid-small" uk-grid>
                                 <div class="uk-width-1-5">
-                                    <img src="./assets/icons/c-sharp.png" />
+                                    <img src="./assets/images/csharp.svg" />
                                 </div>
                                 <div class="uk-width-4-5">
                                     <h3 class="uk-card-title">C#</h3>
@@ -254,7 +252,7 @@
                 </div>
             </div>
         </section>
-        <section id="services" class="uk-section uk-section-large section-background" uk-height-viewport>
+        <section id="services" class="uk-section uk-section-large" uk-height-viewport>
             <div class="uk-container" uk-scrollspy="cls: uk-animation-slide-right; repeat: true">
                 <div class="uk-grid-medium uk-text-center" uk-grid>
                     <div class="uk-width-1-1@m">
@@ -264,22 +262,75 @@
                         <span class="tag">#WhatDo #WhatOffer #Creative</span>
                     </div>
                     <div class="uk-width-1-1@m uk-margin-remove">
-                        <hr class="green-hr" />
+                        <hr class="green-hr"  uk-scrollspy="cls: uk-animation-slide-top; repeat: true" />
                     </div>
                     <div class="uk-width-1-1@m text-gray">
                         <span>Here are some of the things I can help you build your great, stunning and responsive websites.</span>
                     </div>
                 </div>
-                <div class="uk-grid-small uk-width-1-1 uk-margin-medium " uk-grid>
+                <div class="uk-grid-small uk-child-width-1-3 uk-margin-medium" uk-grid>
                     <div class="card-services-parent">
-                        <div class="uk-card uk-card-secondary uk-card-body card-services">
-                            <div class="uk-grid-small " uk-grid>
+                        
+                        <div class="uk-card uk-card-secondary uk-card-body card-services uk-margin-medium-top">
+                            <div class="uk-grid-small" uk-grid>
                                 <div class="uk-width-1-5">
-                                    <img src="./assets/icons/html.png" />
+                                    <i class="far fa-window-maximize fa-2xl"></i>
                                 </div>
                                 <div class="uk-width-4-5">
-                                    <h3 class="uk-card-title">HTML</h3>
-                                    <p class="uk-text-small">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                    <h3 class="uk-card-title">Web Design</h3>
+                                    <p class="uk-text-small">A professional, attractive and easy-to-maintain website, and i can help you stand out from the crowd and be able to establish a strong brand identity.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-services-parent">
+                        <div class="uk-card uk-card-secondary uk-card-body card-services uk-margin-medium-top">
+                            <div class="uk-grid-small" uk-grid>
+                                <div class="uk-width-1-5">
+                                    <i class="far fa-window-maximize fa-2xl"></i>
+                                </div>
+                                <div class="uk-width-4-5">
+                                    <h3 class="uk-card-title">Web API</h3>
+                                    <p class="uk-text-small">Web API is an API as the name suggests, it can be accessed over the web using the HTTP protocol. It is a framework that helps you to create and develop HTTP based RESTFUL services.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-services-parent">
+                        <div class="uk-card uk-card-secondary uk-card-body card-services uk-margin-medium-top">
+                            <div class="uk-grid-small" uk-grid>
+                                <div class="uk-width-1-5">
+                                    <i class="far fa-window-maximize fa-2xl"></i>
+                                </div>
+                                <div class="uk-width-4-5">
+                                    <h3 class="uk-card-title">Responsive Design</h3>
+                                    <p class="uk-text-small">I'm going to make sure that you have a responsive websites that adapts to different screens size so that your website works optimally across different platforms.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-services-parent">
+                        <div class="uk-card uk-card-secondary uk-card-body card-services uk-margin-medium-top">
+                            <div class="uk-grid-small" uk-grid>
+                                <div class="uk-width-1-5">
+                                    <i class="far fa-window-maximize fa-2xl"></i>
+                                </div>
+                                <div class="uk-width-4-5">
+                                    <h3 class="uk-card-title">CMS</h3>
+                                    <p class="uk-text-small">The Content Management System enables us to have more control over our content. Be in charge of your own CMS webdesign website to meet your spesific needs.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-services-parent">
+                        <div class="uk-card uk-card-secondary uk-card-body card-services uk-margin-medium-top">
+                            <div class="uk-grid-small" uk-grid>
+                                <div class="uk-width-1-5">
+                                    <i class="far fa-window-maximize fa-2xl"></i>
+                                </div>
+                                <div class="uk-width-4-5">
+                                    <h3 class="uk-card-title">SUPPORT</h3>
+                                    <p class="uk-text-small">Maintenance? Don't worry about it. I'm going to help you rewrite, update or otherwise change existing websites to keep your website up-to-date and brand new.</p>
                                 </div>
                             </div>
                         </div>
@@ -310,7 +361,7 @@
                         <span class="tag">#HTML #CSS #Javascript #C#</span>
                     </div>
                     <div class="uk-width-1-1@m uk-margin-remove">
-                        <hr class="green-hr" />
+                        <hr class="green-hr" uk-scrollspy="cls: uk-animation-slide-top; repeat: true"/>
                     </div>
                     <div class="uk-width-1-1@m text-gray">
                         <span>Below are the organizations where I have worked as a Web Designer and a Web Developer for six years.</span>
@@ -360,7 +411,7 @@
                 </div>
             </div>
         </section>
-        <section id="portfolio" class="uk-section uk-section-large section-background" uk-height-viewport>
+        <section id="portfolio" class="uk-section uk-section-large " uk-height-viewport>
             <div class="uk-container">
                 <div class="uk-grid-medium uk-text-center" uk-grid uk-scrollspy="cls: uk-animation-slide-left; repeat: true">
                     <div class="uk-width-1-1  ">
@@ -370,13 +421,13 @@
                         <span class="tag">#SomeOfMyWorks</span>
                     </div>
                     <div class="uk-width-1-1@m uk-margin-remove">
-                        <hr class="green-hr" />
+                        <hr class="green-hr" uk-scrollspy="cls: uk-animation-slide-top; repeat: true"/>
                     </div>
                     <div class="uk-width-1-1@m text-gray">
                         <span>See some of my ideas and works below.</span>
                     </div>
                     
-                    <div class="uk-align-left" uk-filter="target: .js-filter">
+                    <div class="uk-width-1-1" uk-filter="target: .js-filter">
                         <ul class="uk-subnav uk-subnav-pill">
                             <li class="uk-active" uk-filter-control><a href="#">All Projects</a></li>
                             <li uk-filter-control="[data-type='web']"><a href="#">Web</a></li>
@@ -418,7 +469,7 @@
                         <span class="tag">#HTML #CSS #Javascript #C#</span>
                     </div>
                     <div class="uk-width-1-1@m uk-margin-remove">
-                        <hr class="green-hr" />
+                        <hr class="green-hr" uk-scrollspy="cls: uk-animation-slide-top; repeat: true" />
                     </div>
                     <div class="uk-width-1-1@m text-gray">
                         <span>Some positive reviews from all of my satisfied clients.</span>
@@ -426,7 +477,7 @@
                 </div>
             </div>
         </section>
-        <section id="contact" class="uk-section uk-section-large section-background" uk-height-viewport>
+        <section id="contact" class="uk-section uk-section-large " uk-height-viewport>
             <div class="uk-container">
                 <div class="uk-grid-medium uk-text-center" uk-grid uk-scrollspy="cls: uk-animation-slide-top; repeat: true">
                     <div class="uk-width-1-1  ">
@@ -436,7 +487,7 @@
                         <span class="tag">#HowToReachMe</span>
                     </div>
                     <div class="uk-width-1-1@m uk-margin-remove">
-                        <hr class="green-hr" />
+                        <hr class="green-hr" uk-scrollspy="cls: uk-animation-slide-top; repeat: true"/>
                     </div>
                     <div class="uk-width-1-1@m text-gray">
                         <span>Are you interested?</span>
@@ -474,12 +525,11 @@
             </div>
         </section>
     </main>
-
     <footer>
         <div class="uk-section uk-section-small">
             <div class="uk-grid-medium uk-child-width-1-2" uk-grid>
                 <div class="uk-text-center">
-                <span class="uk-text-large">© 2022 Designed by <a class="uk-link-text text-yellow" target="_blank" href="https://www.instagram.com/berkcinaz/">Berk Cinaz</a></span>
+                <span>© 2022 Designed by <a class="uk-link-text text-yellow" target="_blank" href="https://www.instagram.com/berkcinaz/">Berk Cinaz</a></span>
                 </div>
                 <div class="center">
                     <div id="social">
@@ -507,7 +557,6 @@
 <script src="https://kit.fontawesome.com/ede3a46200.js" crossorigin="anonymous"></script>
 <script src="./assets/uikit/dist/js/uikit.min.js"></script>
 <script src="./assets/uikit/dist/js/uikit-icons.min.js"></script>
-
 <script>
 $("#phone").attr("placeholder", "+(00) 000-000-00-00");
 let options =  {
@@ -518,9 +567,6 @@ let options =  {
     }
 };
 $('#phone').mask('+(00) 000-000-00-00', options);
- </script>
- <script>
-     
  </script>
 </body>
 </html>
