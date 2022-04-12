@@ -194,7 +194,7 @@
    }
    .contact-form{
        textarea,input{
-           background-color: @global-background !important;
+           background-color: #2c145e !important;
            color:#fff;
            border: 0px;
        }
@@ -367,6 +367,40 @@
   
   #social ul:hover > li:hover {
     opacity: 1;
+  }
+  .css-button-sliding-to-left--yellow {
+    min-width: 130px;
+    height: 40px;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 5px;
+    z-index: 0;
+    background: #ffd819;
+    overflow: hidden;
+    border: 2px solid #ffd819;
+    color: #fff;
+  }
+  .css-button-sliding-to-left--yellow:hover {
+    color: #E05C53;
+  }
+  .css-button-sliding-to-left--yellow:hover:after {
+    width: 100%;
+  }
+  .css-button-sliding-to-left--yellow:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    transition: all 0.3s ease;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background: #fff;
   }
 }
 
