@@ -2675,6 +2675,13 @@ p::selection {
   background: #6600ff;
   border-radius: 50px;
 }
+*,
+*:hover,
+*:after,
+*:before,
+*:focus {
+  cursor: url('/assets/icons/cursor.png'), auto;
+}
 /* ========================================================================
    Component: Container
  ========================================================================== */
